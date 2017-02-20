@@ -21,3 +21,17 @@ def print_lol2_nester(the_list, level=0):
             for tab_stop in range(level):
                 print("\t", end='')
             print(lol2_item)
+
+
+def print_lol3_nester(the_list, indent=False, level=0):
+    # 添加制表符，使输出结果更有层次
+    # 为level增加缺省值
+    # 增加是否使用制表符的开关
+    for lol3_item in the_list:
+        if isinstance(lol3_item, list):
+            print_lol3_nester(lol3_item, indent, level+1)
+        else:
+            if indent:
+                for tab_stop in range(level):
+                    print("\t", end='')
+            print(lol3_item)

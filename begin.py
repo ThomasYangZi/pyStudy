@@ -1,5 +1,5 @@
 import time
-from nester import print_lol_nester, print_lol2_nester
+from nester import print_lol_nester, print_lol2_nester, print_lol3_nester
 
 # list：列表就是数组
 # 列表没有越界，因为列表是动态的，如果访问一个不存在的元素，Python会给出一个'IndexError'作为响应
@@ -23,7 +23,7 @@ print(movies)
 movies.sort()
 print(movies)
 
-# 元组
+# 元组:不能变的list
 tup1 = ('physics', 'chemistry', 1997, 2000)
 tup2 = (1, 2, 3, 4, 5)
 tup3 = "a", "b", "c", "d"
@@ -74,4 +74,8 @@ for num in range(4):
     print(num)
 
 # 增加制表符
-print_lol2_nester(Titanic, 0)
+print_lol2_nester(Titanic)
+
+print_lol3_nester(Titanic, True, 0)
+
+
