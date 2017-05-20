@@ -90,7 +90,7 @@ def get_group_articles(conn, group, page, order='score:'):
     return get_articles(conn, page, key)
 
 
-#--------------- 以下是用于测试代码的辅助函数 --------------------------------
+# --------------- 以下是用于测试代码的辅助函数 --------------------------------
 
 class TestCh01(unittest.TestCase):
     def setUp(self):
@@ -145,7 +145,6 @@ class TestCh01(unittest.TestCase):
         if to_del:
             conn.delete(*to_del)
 
+
 if __name__ == '__main__':
     unittest.main()
-
-
