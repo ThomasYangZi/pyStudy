@@ -77,5 +77,3 @@ for num in range(4):
 print_lol2_nester(Titanic)
 
 print_lol3_nester(Titanic, True, 0)
-
-
